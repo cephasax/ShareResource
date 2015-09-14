@@ -16,9 +16,9 @@ public class GerenteRunnable implements Runnable{
 		try{
 			while (true){
 				cofre.depositoOuSaque(valor);
-				System.out.println("Gerente numero: " + numeroDoGerente +
-									" - Deposito: " + valor +
-									" - Total no cofre: " + cofre.getValorGuardado());
+				System.out.println("Gerente: " + numeroDoGerente +
+									"\tDeposito: " + valor +
+									"  \tTotal no cofre: " + cofre.getValorGuardado() + " R$");
 				Thread.sleep(DELAY);
 			}
 		}catch (InterruptedException e){
